@@ -89,7 +89,6 @@ addToCart.addEventListener(`click`, () => {
         console.log(`panier n'existe pas`);
         itemsLocalStorage = [];
         add2Cart();
-        //popupConfirm();
     }
 });
 
