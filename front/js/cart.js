@@ -26,6 +26,7 @@ const changeQty = (id, color, qty) => {
         }
         localStorage.setItem(`selectedProduct`, JSON.stringify(itemsLocalStorage));
         window.location.reload();
+        alert(`Quantité modifiée !`);
     }
 }
 
@@ -37,6 +38,7 @@ const deleteItem = (id, color) => {
             itemsLocalStorage.splice(i, 1);
             localStorage.setItem(`selectedProduct`, JSON.stringify(itemsLocalStorage));
             window.location.reload();
+            alert(`Produit(s) supprimé(s) !`)
         }
     }
 }
